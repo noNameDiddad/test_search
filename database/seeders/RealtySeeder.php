@@ -25,5 +25,7 @@ class RealtySeeder extends Seeder
         ];
 
         Realty::insert($realty);
+
+        Realty::factory()->count(100)->create();
     }
 }
