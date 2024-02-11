@@ -5,7 +5,7 @@
                 <h1>Поиск по имени</h1>
                 <input wire:model.live="searchData.name" type="text"
                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                       placeholder="Search realties...">
+                       placeholder="Search by name...">
                 @error('searchData.name') <span class="error">{{ $message }}</span> @enderror
             </label>
         </div>
@@ -14,7 +14,7 @@
                 <h1>Количество спален</h1>
                 <input wire:model.live="searchData.bedrooms_count" type="text"
                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                       placeholder="Search realties...">
+                       placeholder="Search by bedrooms...">
                 @error('searchData.bedrooms_count') <span class="error">{{ $message }}</span> @enderror
             </label>
         </div>
@@ -23,7 +23,7 @@
                 <h1>Количество ванных</h1>
                 <input wire:model.live="searchData.bathrooms_count" type="text"
                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                       placeholder="Search realties...">
+                       placeholder="Search by bathrooms...">
             </label>
         </div>
         <div class="w-1/6 mx-1">
@@ -31,7 +31,7 @@
                 <h1>Количество этажей</h1>
                 <input wire:model.live="searchData.storeys_count" type="text"
                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                       placeholder="Search realties...">
+                       placeholder="Search by storeys...">
             </label>
         </div>
         <div class="w-1/6 mx-1">
@@ -39,23 +39,21 @@
                 <h1>Количество гаражей</h1>
                 <input wire:model.live="searchData.garages_count" type="text"
                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                       placeholder="Search realties...">
+                       placeholder="Search by garages...">
             </label>
         </div>
         <div class="w-1/12 mx-1">
             <label>
                 <h1>Цена от</h1>
                 <input wire:model.live="searchData.price_from" type="text"
-                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                       placeholder="Search realties...">
+                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
             </label>
         </div>
         <div class="w-1/12 mx-1">
             <label>
                 <h1>Цена до</h1>
                 <input wire:model.live="searchData.price_to" type="text"
-                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                       placeholder="Search realties...">
+                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
             </label>
         </div>
     </div>
