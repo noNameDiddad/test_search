@@ -42,6 +42,22 @@
                        placeholder="Search realties...">
             </label>
         </div>
+        <div class="w-1/12 mx-1">
+            <label>
+                <h1>Цена от</h1>
+                <input wire:model.live="searchData.price_from" type="text"
+                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                       placeholder="Search realties...">
+            </label>
+        </div>
+        <div class="w-1/12 mx-1">
+            <label>
+                <h1>Цена до</h1>
+                <input wire:model.live="searchData.price_to" type="text"
+                       class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                       placeholder="Search realties...">
+            </label>
+        </div>
     </div>
     <div class="w-full flex pb-10">
         <div class="w-1/6 relative mx-1">
