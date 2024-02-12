@@ -1,0 +1,15 @@
+# syntax=docker/dockerfile:1.2
+FROM lykart/alpine-laravel
+ARG COMPOSER_AUTH
+
+# copy application sources into image (completely)
+COPY . /app/
+COPY .docker/configs/php.ini /usr/local/etc/php/conf.d/99-sail.ini
+COPY .docker/configs/.rr.prod.yaml /app/.rr.yaml
+
+# install composer dependencies
+RUN composer install \
+    && npm install \
+    && rm -rf /app/.gitlab 
+
+ENTRYPOINT ./entrypoint.sh

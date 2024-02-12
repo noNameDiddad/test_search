@@ -32,4 +32,5 @@ auth.json
 
 /.fleet
 /.idea
-/.vscode
+/.vscoderr
+.rr.yaml
